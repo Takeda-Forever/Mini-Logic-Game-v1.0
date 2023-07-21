@@ -1,11 +1,10 @@
 #pragma	once
 #include "lib.h"
-#define cls system("cls") //Очистка консоля
-#define milis(x) sleep_for(milliseconds(x)) //Ожидание в милисекундах
-#define second(x) sleep_for(seconds(x)) //Ожидание в секундах
-#define cin_fail cin.clear(); cin.ignore(numeric_limits<std::streamsize>::max(), '\n') //Очистка ввода
-#define jump cout << endl //Пропуск строки
-#define next cout << "Нажмите кнопку что-бы продолжить:"
+#define cls system("cls") //ГЋГ·ГЁГ±ГІГЄГ  ГЄГ®Г­Г±Г®Г«Гї
+#define milis(x) sleep_for(milliseconds(x)) //ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Гў Г¬ГЁГ«ГЁГ±ГҐГЄГіГ­Г¤Г Гµ
+#define second(x) sleep_for(seconds(x)) //ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Гў Г±ГҐГЄГіГ­Г¤Г Гµ
+#define cin_fail cin.clear(); cin.ignore(numeric_limits<std::streamsize>::max(), '\n') //ГЋГ·ГЁГ±ГІГЄГ  ГўГўГ®Г¤Г 
+#define jump cout << endl //ГЏГ°Г®ГЇГіГ±ГЄ Г±ГІГ°Г®ГЄГЁ
 
 enum choice { start, error, option, edit };
 class game {
@@ -23,6 +22,6 @@ private:
 	choice select;
 	int winner(bool&);
 	int correct_choice(uint16_t&);
-	string menu_list = "1.Начать игру\n2.Настройки\n3.Выход\n";
+	string menu_list = "1.ГЌГ Г·Г ГІГј ГЁГЈГ°Гі\n2.ГЌГ Г±ГІГ°Г®Г©ГЄГЁ\n3.Г‚Г»ГµГ®Г¤\n";
 };
 
