@@ -22,6 +22,6 @@ private:
 	choice select;
 	int winner(bool&);
 	int correct_choice(uint16_t&);
-	string menu_list = "1.Íà÷àòü èãðó\n2.Íàñòðîéêè\n3.Âûõîä\n";
+	string menu_list = "1.Начать игру\n2.Настройки\n3.Выход\n";
 };
 
