@@ -1,0 +1,28 @@
+#pragma	once
+#include "lib.h"
+#define cls system("cls") //Очистка консоля
+#define milis(x) sleep_for(milliseconds(x)) //Ожидание в милисекундах
+#define second(x) sleep_for(seconds(x)) //Ожидание в секундах
+#define cin_fail cin.clear(); cin.ignore(numeric_limits<std::streamsize>::max(), '\n') //Очистка ввода
+#define jump cout << endl //Пропуск строки
+#define next cout << "Нажмите кнопку что-бы продолжить:"
+
+enum choice { start, error, option, edit };
+class game {
+public:
+	game(uint16_t _num = 25) :num(_num){}
+	void menu();
+	void game_start();
+	void game_option();
+	void test();
+	void game_error();
+	void option_edit();
+private:
+	uint16_t num;
+	bool turn = true;
+	choice select;
+	int winner(bool&);
+	int correct_choice(uint16_t&);
+	string menu_list = "1.Начать игру\n2.Настройки\n3.Выход\n";
+};
+
